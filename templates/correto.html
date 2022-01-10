@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resposta Correta</title>
+    <style>
+    body {
+        background-color: #90f890;
+    }
+    h1 {
+        text-align: center;
+    }
+    .right {
+        width: 350px;
+        border-radius: 140px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .back {
+        margin-left: 10px;
+        width: 100px;
+        border-radius: 20px;
+    }
+    </style>
+</head>
+<body>
+    <a href="https://segunda-guerra-mundial.herokuapp.com/quiz">
+            <img class="back" src="{{ url_for('static', filename='go_back.png')}}">
+    </a>
+    <h1>
+        Parabéns! Resposta correta!
+    </h1>
+    <br><br>
+    <img class="right" src="{{ url_for('static', filename='correct_answer.png')}}">
+</body>
+</html>
