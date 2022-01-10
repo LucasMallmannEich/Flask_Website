@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Imagens</title>
+    <style>
+    body {
+        background-color: grey;
+        background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Field-with-snow-champ-enneige.jpg/1280px-Field-with-snow-champ-enneige.jpg') fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h1 {
+        background-color: #f5994e;
+        text-align: center;
+        width: 60%;
+        margin-left: 270px;
+        border-radius: 30px;
+        padding: 20px;
+    }
+    img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 30px;
+        width: 90%;
+    }
+    main {
+        border-radius: 30px;
+        width: 60%;
+        margin-left: 270px;
+        padding: 20px;
+        background-color: #f5994e;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .symbol1 {
+        border: 10px solid black;
+        width: 200px;
+        float: left;
+        margin-left: 120px;
+    }
+    .symbol2 {
+        border: 10px solid black;
+        width: 200px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Imagens da Segunda Guerra Mundial</h1>
+    <main>
+        <img src="{{ url_for('static', filename='ww2-1.jpg')}}">
+        <p> Soldados se locomovendo pelo oceano.</p>
+        <br><br>
+        <img src="{{ url_for('static', filename='ww2-2.jpg')}}">
+        <p> Soldados ajustando um tanque de guerra.</p>
+        <br><br>
+        <img src="{{ url_for('static', filename='ww2-3.jpg')}}">
+        <p> Soldados ao redor de um tanque de guerra.</p>
+        <br><br>
+        <img src="{{ url_for('static', filename='ww2-4.jpg')}}">
+        <p>Winston Churchill, Franklin Roosevelt e Josef Stalin reunidos.</p>
+        <br><br>
+        <img src="{{ url_for('static', filename='ww2-5.jpg')}}">
+        <p> Soldados caminhando por um campo.</p>
+        <br><br>
+        <img src="{{ url_for('static', filename='ww2-6.jpg')}}">
+        <p> Soldados segurando seus "presentes de Páscoa" à Hitler.</p>
+        <br><br>
+        <img src="{{ url_for('static', filename='ww2-7.jpeg')}}">
+        <p> Soldado fumando no norte da África.</p>
+        <br><br>
+        <img src="{{ url_for('static', filename='ww2-8.jpg')}}">
+        <p> Soldados russos descansando.</p>
+        <br><br>
+        <img src="{{ url_for('static', filename='ww2-9.jpeg')}}">
+        <p> Soldado vindo do mar sendo resgatado por seus companheiros. </p>
+        <br><br>
+        <img src="{{ url_for('static', filename='ww2-10.jpg')}}">
+        <p> Soldados se alimentando em "mesas" improvisadas.</p>
+        <br><br>
+        <a href="https://segunda-guerra-mundial.herokuapp.com/">
+            <img class="symbol1" src="{{ url_for('static', filename='back_symbol.png')}}">
+        </a>
+        <a href="#">
+            <img class="symbol2" src="{{ url_for('static', filename='up_symbol.png')}}">
+        </a>
+    </main>
+</body>
+</html>
