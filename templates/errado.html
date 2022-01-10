@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resposta Errada</title>
+    <style>
+    body {
+        background-color: #dc142c;
+    }
+    h1 {
+        text-align: center;
+    }
+    .wrong {
+        width: 350px;
+        border-radius: 140px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .back {
+        margin-left: 10px;
+        width: 100px;
+        border-radius: 20px;
+    }
+    </style>
+</head>
+<body>
+    <a href="https://segunda-guerra-mundial.herokuapp.com/quiz">
+            <img class="back" src="{{ url_for('static', filename='go_back_red.png')}}">
+    </a>
+    <h1>
+        Resposta errada... Tente novamente!
+    </h1>
+    <br><br>
+    <img class="wrong" src="{{ url_for('static', filename='wrong_answer.png')}}">
+</body>
+</html>
